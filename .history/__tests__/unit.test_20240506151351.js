@@ -90,5 +90,5 @@ test('Invalid hex color returns false', () => {
 });
 
 test('Invalid hex color returns false', () => {
-    expect(isHexColor('#00000000')).toBe(false);
+    expect(isHexColor('12-12-2012')).toBe(false);
 });

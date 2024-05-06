@@ -75,20 +75,3 @@ test('Invalid date returns false', () => {
 test('Invalid date returns false', () => {
     expect(isDate('12-12-2012')).toBe(false);
 });
-
-//hex color
-test('Valid hex color returns true', () => {
-    expect(isHexColor('#ff0000')).toBe(true);
-});
-
-test('Valid hex color returns true', () => {
-    expect(isHexColor('#f00')).toBe(true);
-});
-
-test('Invalid hex color returns false', () => {
-    expect(isHexColor('blue')).toBe(false);
-});
-
-test('Invalid hex color returns false', () => {
-    expect(isHexColor('#00000000')).toBe(false);
-});

@@ -78,17 +78,17 @@ test('Invalid date returns false', () => {
 
 //hex color
 test('Valid hex color returns true', () => {
-    expect(isHexColor('#ff0000')).toBe(true);
+    expect(isHexColor('12/1/2024')).toBe(true);
 });
 
 test('Valid hex color returns true', () => {
-    expect(isHexColor('#f00')).toBe(true);
+    expect(isHexColor('1/10/2050')).toBe(true);
 });
 
 test('Invalid hex color returns false', () => {
-    expect(isHexColor('blue')).toBe(false);
+    expect(isHexColor('12/11/10')).toBe(false);
 });
 
 test('Invalid hex color returns false', () => {
-    expect(isHexColor('#00000000')).toBe(false);
+    expect(isHexColor('12-12-2012')).toBe(false);
 });

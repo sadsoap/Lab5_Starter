@@ -48,47 +48,13 @@ test('Strong password returns true', () => {
 });
 
 test('Strong password returns true', () => {
-    expect(isStrongPassword('PassTest22_87t')).toBe(true);
+    expect(isStrongPassword('jufdrsuy123@hotmail.com')).toBe(true);
 });
 
 test('Weak password returns false', () => {
-    expect(isStrongPassword('no')).toBe(false);
+    expect(isStrongPassword('linz@gmail')).toBe(false);
 });
 
 test('Weak password returns false', () => {
-    expect(isStrongPassword('L123Fail_!')).toBe(false);
-});
-
-//date
-test('Valid date returns true', () => {
-    expect(isDate('12/1/2024')).toBe(true);
-});
-
-test('Valid date returns true', () => {
-    expect(isDate('1/10/2050')).toBe(true);
-});
-
-test('Invalid date returns false', () => {
-    expect(isDate('12/11/10')).toBe(false);
-});
-
-test('Invalid date returns false', () => {
-    expect(isDate('12-12-2012')).toBe(false);
-});
-
-//hex color
-test('Valid hex color returns true', () => {
-    expect(isHexColor('#ff0000')).toBe(true);
-});
-
-test('Valid hex color returns true', () => {
-    expect(isHexColor('#f00')).toBe(true);
-});
-
-test('Invalid hex color returns false', () => {
-    expect(isHexColor('blue')).toBe(false);
-});
-
-test('Invalid hex color returns false', () => {
-    expect(isHexColor('#00000000')).toBe(false);
+    expect(isStrongPassword('@gmail.com')).toBe(false);
 });
